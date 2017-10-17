@@ -13,7 +13,7 @@ pw_gen() {
 }
 
 pg_cmd() {
-    su - postgres -c "$*"
+    su -s /bin/bash -c "$*" postgres    
 }
 
 start_db() {
